@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const userFriendlyDate = formatDate(task.createdAt);
         const itemTask = document.createElement("div");
         itemTask.className =
-          "flex justify-between bg-white p-3 w-full rounded-3xl";
+          "flex justify-between bg-white p-3 w-full rounded-3xl border";
         itemTask.innerHTML = `
           <div class="task-card flex flex-col gap-5">
                     <div class="flex gap-3 items-center">
@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="img/icons/code.svg" class="w-8" alt="icon" />
                       </div>
                       <div class="flex flex-col">
-                        <p class="font-semibold text-[14px] md:text-base md:leading-[27px]">
+                        <p class="font-bold text-[14px] md:text-base md:leading-[27px]">
                           ${capitalizeFirstChar(task.taskName)}
                         </p>
-                        <p class="text-[12px] md:text-sm leading-[21px] opacity-70">
+                        <p class="text-[12px] md:text-sm leading-[21px] text-grey">
                         Created at ${userFriendlyDate}
                         </p>
                       </div>
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
                       ${
                         task.isCompleted === false
                           ? `<div
-                            class="flex gap-1 items-center text-[#7676B1] bg-progress py-2 px-3 rounded-full"
+                            class="flex gap-1 items-center text-[#6767b5] bg-progress py-2 px-3 rounded-full"
                           >
                             <div class="flex items-center justify-center shrink-0 w-4 h-4 md:w-5 md:h-5">
                               <svg
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <p class="text-[12px]">In Progress</p>
                           </div>`
                           : `<div
-                              class="flex gap-1 items-center text-[#97AB46] bg-complete py-2 px-3 rounded-full"
+                              class="flex gap-1 items-center text-[#8ba132] bg-complete py-2 px-3 rounded-full"
                             >
                               <div class="flex items-center justify-center shrink-0 w-4 h-4 md:w-5 md:h-5">
                                 <svg
@@ -134,17 +134,21 @@ document.addEventListener("DOMContentLoaded", () => {
                   <div class="flex flex-col md:flex-row items-center gap-3 md:gap-x-3">
                     <a
                       href="#" id="deleteTask-${task.id}"
-                      class="flex text-[12px] md:text-sm gap-[10px] justify-center items-center px-2 md:px-4 h-11 font-semibold text-red hover:text-white bg-transparent rounded-full w-full border border-red hover:bg-red transition"
+                      class="flex text-[12px] md:text-sm gap-[10px] justify-center items-center px-2 md:px-4 h-11 font-semibold text-red hover:text-white bg-transparent rounded-full w-full border border-red hover:bg-red transition-colors duration-200"
                       >Delete</a
                     >
                     ${
                       task.isCompleted === false
                         ? `<a
                           href="#" id="completeTask-${task.id}"
-                          class="flex text-[12px] md:text-sm  gap-[10px] justify-center items-center px-4 h-11 font-semibold bg-green rounded-full w-full border border-transparent hover:bg-transparent hover:border-green transition"
+                          class="flex text-[12px] md:text-sm  gap-[10px] justify-center items-center px-4 h-11 font-semibold text-white hover:text-purple bg-purple rounded-full w-full border border-purple hover:bg-transparent hover:border-purple transition-colors duration-200"
                           >Complete</a
                         >`
-                        : `<a href="#" id="completeTask-${task.id}" class="hidden">Complete</a>`
+                        : `<a
+                          href="#" id="completeTask-${task.id}"
+                          class="flex text-[12px] md:text-sm  gap-[10px] justify-center items-center px-4 h-11 font-semibold text-grey  bg-transparent rounded-full w-full border border-grey "
+                          >Completed</a
+                        >`
                     }
                   </div>
           `;

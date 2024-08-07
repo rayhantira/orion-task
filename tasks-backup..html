@@ -15,15 +15,17 @@
     <section id="dashboard" class="flex">
       <div
         id="sidebar"
-        class="w-full hidden bg-navy md:w-[230px] lg:w-[300px] md:flex flex-col gap-[30px] p-[30px] shrink-0 h-screen"
+        class="w-full hidden bg-beige md:w-[230px] h-full lg:w-[260px] lg:block flex-col gap-[30px] p-[30px] shrink-0"
       >
         <div class="flex justify-center">
           <img src="img/icons/logo.svg" class="w-28" alt="logo" />
         </div>
-        <div class="flex flex-col gap-[18px]">
+
+        <div class="flex flex-col gap-[6px] xl:gap-[8px]">
+          <h6 class="pt-[20px] text-xs text-grey font-bold">GENERAL</h6>
           <a
             href="dashboard.html"
-            class="group text-sm xl:text-lg flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full border border-transparent hover:border-green hover:bg-green transition-colors duration-300"
+            class="group text-[14px] flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-blue transition-colors duration-300"
           >
             <div class="w-5 h-5 fill-current">
               <svg
@@ -33,34 +35,38 @@
               >
                 <path
                   d="M2.16667 11.5417H8.41667C8.98958 11.5417 9.45833 11.0729 9.45833 10.5V2.16667C9.45833 1.59375 8.98958 1.125 8.41667 1.125H2.16667C1.59375 1.125 1.125 1.59375 1.125 2.16667V10.5C1.125 11.0729 1.59375 11.5417 2.16667 11.5417ZM2.16667 19.875H8.41667C8.98958 19.875 9.45833 19.4063 9.45833 18.8333V14.6667C9.45833 14.0938 8.98958 13.625 8.41667 13.625H2.16667C1.59375 13.625 1.125 14.0938 1.125 14.6667V18.8333C1.125 19.4063 1.59375 19.875 2.16667 19.875ZM12.5833 19.875H18.8333C19.4063 19.875 19.875 19.4063 19.875 18.8333V10.5C19.875 9.92708 19.4063 9.45833 18.8333 9.45833H12.5833C12.0104 9.45833 11.5417 9.92708 11.5417 10.5V18.8333C11.5417 19.4063 12.0104 19.875 12.5833 19.875ZM11.5417 2.16667V6.33333C11.5417 6.90625 12.0104 7.375 12.5833 7.375H18.8333C19.4063 7.375 19.875 6.90625 19.875 6.33333V2.16667C19.875 1.59375 19.4063 1.125 18.8333 1.125H12.5833C12.0104 1.125 11.5417 1.59375 11.5417 2.16667Z"
-                  opacity="0.8"
+                  opacity="0.6"
                   fill="currentColor"
-                  class="fill-current text-white group-hover:text-navy"
+                  class="fill-current text-grey group-hover:text-white"
                 />
               </svg>
             </div>
-            <p class="font-semibold group-hover:text-navy">Dashboard</p>
+
+            <p class="font-semibold group-hover:text-white">Dashboard</p>
           </a>
           <a
             href="team.html"
-            class="group text-sm xl:text-lg flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-green transition-colors duration-300"
+            class="group text-[14px] flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-blue transition-colors duration-300"
           >
             <div class="w-5 h-5">
               <svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M6.87451 8.625C7.56675 8.625 8.24344 8.41973 8.81901 8.03515C9.39458 7.65056 9.84319 7.10394 10.1081 6.46439C10.373 5.82485 10.4423 5.12112 10.3073 4.44219C10.1722 3.76325 9.83887 3.13961 9.34939 2.65013C8.8599 2.16064 8.23626 1.8273 7.55733 1.69225C6.87839 1.5572 6.17466 1.62652 5.53512 1.89142C4.89558 2.15633 4.34895 2.60493 3.96437 3.18051C3.57978 3.75608 3.37451 4.43277 3.37451 5.125C3.37451 6.05326 3.74326 6.9435 4.39964 7.59988C5.05602 8.25625 5.94625 8.625 6.87451 8.625Z"
                   fill="currentColor"
-                  class="fill-current text-white group-hover:text-navy"
+                  opacity="0.6"
+                  class="fill-current text-grey group-hover:text-white"
                 />
                 <path
                   d="M13.8745 10.3755C14.3937 10.3755 14.9012 10.2215 15.3329 9.9331C15.7646 9.64466 16.101 9.23469 16.2997 8.75503C16.4984 8.27538 16.5504 7.74758 16.4491 7.23838C16.3478 6.72918 16.0978 6.26145 15.7307 5.89433C15.3636 5.52722 14.8958 5.27721 14.3866 5.17593C13.8774 5.07464 13.3496 5.12663 12.87 5.32531C12.3903 5.52399 11.9803 5.86044 11.6919 6.29212C11.4035 6.7238 11.2495 7.23131 11.2495 7.75049C11.2495 8.44668 11.5261 9.11436 12.0184 9.60665C12.5106 10.0989 13.1783 10.3755 13.8745 10.3755Z"
                   fill="currentColor"
-                  class="fill-current text-white group-hover:text-navy"
+                  opacity="0.6"
+                  class="fill-current text-grey group-hover:text-white"
                 />
                 <path
                   d="M17.3745 16.4998C17.6066 16.4998 17.8291 16.4076 17.9932 16.2435C18.1573 16.0794 18.2495 15.8568 18.2495 15.6248C18.2488 14.807 18.0189 14.0058 17.5859 13.312C17.1529 12.6183 16.5342 12.0598 15.7998 11.6999C15.0655 11.3401 14.245 11.1932 13.4314 11.276C12.6178 11.3588 11.8438 11.668 11.197 12.1685C10.34 11.3148 9.24931 10.734 8.06261 10.4994C6.87591 10.2647 5.64629 10.3867 4.52884 10.85C3.41138 11.3133 2.45612 12.0971 1.78354 13.1025C1.11095 14.108 0.751148 15.2901 0.749512 16.4998C0.749512 16.7318 0.841699 16.9544 1.00579 17.1185C1.16989 17.2826 1.39245 17.3748 1.62451 17.3748H12.1245C12.3566 17.3748 12.5791 17.2826 12.7432 17.1185C12.9073 16.9544 12.9995 16.7318 12.9995 16.4998"
                   fill="currentColor"
-                  class="fill-current text-white group-hover:text-navy"
+                  opacity="0.6"
+                  class="fill-current text-grey group-hover:text-white"
                 />
               </svg>
             </div>
@@ -68,24 +74,24 @@
           </a>
           <a
             href="team.html"
-            class="group text-sm xl:text-lg flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full bg-green transition-colors duration-300 shadow-2xl shadow-green"
+            class="group text-[14px] flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full bg-blue transition-colors duration-300"
           >
             <div class="w-5 h-5 fill-current">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   opacity="0.8"
                   d="M7 5.75C6.59 5.75 6.25 5.41 6.25 5V2C6.25 1.59 6.59 1.25 7 1.25C7.41 1.25 7.75 1.59 7.75 2V5C7.75 5.41 7.41 5.75 7 5.75Z"
-                  class="fill-current text-navy"
+                  class="fill-current text-grey"
                 />
                 <path
                   opacity="0.8"
                   d="M15 5.75C14.59 5.75 14.25 5.41 14.25 5V2C14.25 1.59 14.59 1.25 15 1.25C15.41 1.25 15.75 1.59 15.75 2V5C15.75 5.41 15.41 5.75 15 5.75Z"
-                  class="fill-current text-navy"
+                  class="fill-current text-grey"
                 />
                 <path
                   opacity="0.8"
                   d="M20 8.5V17C20 20 18.5 22 15 22H7C3.5 22 2 20 2 17V8.5C2 5.5 3.5 3.5 7 3.5H15C18.5 3.5 20 5.5 20 8.5Z"
-                  class="fill-current text-navy"
+                  class="fill-current text-grey"
                 />
                 <path
                   opacity="0.8"
@@ -99,36 +105,41 @@
                 />
               </svg>
             </div>
-            <p class="text-navy font-semibold">Task</p>
+            <p class="text-white font-semibold">Task</p>
           </a>
           <a
             href="rewards.html"
-            class="group text-sm xl:text-lg flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-green transition-colors duration-300"
+            class="group text-[14px] flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-blue transition-colors duration-300"
           >
             <div class="w-5 h-5 fill-current">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M6 16.6725V22.5C6.0001 22.6238 6.03084 22.7456 6.08948 22.8546C6.14812 22.9637 6.23283 23.0565 6.33605 23.1248C6.43928 23.1931 6.55781 23.2348 6.68108 23.2462C6.80435 23.2576 6.92851 23.2383 7.0425 23.19L12 21.0675L16.9575 23.19C17.05 23.2294 17.1495 23.2498 17.25 23.25C17.397 23.2488 17.5405 23.2045 17.6625 23.1225C17.7657 23.0545 17.8505 22.9622 17.9093 22.8536C17.9682 22.745 17.9994 22.6235 18 22.5V16.6725C16.2894 18.018 14.1763 18.7494 12 18.7494C9.8237 18.7494 7.71055 18.018 6 16.6725Z"
                   fill="currentColor"
-                  class="fill-current text-white group-hover:text-navy"
+                  opacity="0.6"
+                  class="fill-current text-grey group-hover:text-white"
                 />
                 <path
                   d="M12 17.25C13.6317 17.25 15.2268 16.7662 16.5835 15.8596C17.9402 14.9531 18.9976 13.6646 19.622 12.1571C20.2464 10.6497 20.4098 8.99085 20.0915 7.39051C19.7732 5.79017 18.9874 4.32016 17.8336 3.16637C16.6798 2.01259 15.2098 1.22685 13.6095 0.908525C12.0092 0.590197 10.3504 0.753575 8.84286 1.378C7.33537 2.00242 6.0469 3.05984 5.14038 4.41655C4.23385 5.77325 3.75 7.36831 3.75 9C3.75 11.188 4.61919 13.2865 6.16637 14.8336C7.71354 16.3808 9.81196 17.25 12 17.25ZM12 3.75C13.0384 3.75 14.0534 4.05791 14.9167 4.63479C15.7801 5.21167 16.453 6.0316 16.8504 6.99092C17.2477 7.95023 17.3517 9.00583 17.1491 10.0242C16.9466 11.0426 16.4465 11.9781 15.7123 12.7123C14.9781 13.4465 14.0426 13.9466 13.0242 14.1491C12.0058 14.3517 10.9502 14.2477 9.99091 13.8504C9.0316 13.453 8.21166 12.7801 7.63478 11.9167C7.05791 11.0534 6.75 10.0384 6.75 9C6.75 7.60762 7.30312 6.27226 8.28769 5.28769C9.27226 4.30313 10.6076 3.75 12 3.75Z"
                   fill="currentColor"
-                  class="fill-current text-white group-hover:text-navy"
+                  opacity="0.6"
+                  class="fill-current text-grey group-hover:text-white"
                 />
                 <path
                   d="M12 12.75C14.0711 12.75 15.75 11.0711 15.75 9C15.75 6.92893 14.0711 5.25 12 5.25C9.92893 5.25 8.25 6.92893 8.25 9C8.25 11.0711 9.92893 12.75 12 12.75Z"
                   fill="currentColor"
-                  class="fill-current text-white group-hover:text-navy"
+                  opacity="0.6"
+                  class="fill-current text-grey group-hover:text-white"
                 />
               </svg>
             </div>
             <p class="font-semibold group-hover:text-navy">Awards</p>
           </a>
+
+          <h6 class="pt-[20px] text-xs text-grey font-bold">OTHERS</h6>
           <a
             href="rewards.html"
-            class="group text-sm xl:text-lg flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-green transition-colors duration-300"
+            class="group text-[14px] flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-blue transition-colors duration-300"
           >
             <div class="w-5 h-5 fill-current">
               <svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
@@ -186,11 +197,11 @@
                 />
               </svg>
             </div>
-            <p class="font-semibold group-hover:text-navy">AI Customs</p>
+            <p class="font-semibold group-hover:text-navy">Plugins</p>
           </a>
           <a
             href="#"
-            class="group text-sm xl:text-lg flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-green transition-colors duration-300"
+            class="group text-[14px] flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-blue transition-colors duration-300"
           >
             <div class="w-5 h-5 fill-current">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -212,7 +223,7 @@
           </a>
           <a
             href="rewards.html"
-            class="group text-sm xl:text-lg flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-green transition-colors duration-300"
+            class="group text-[14px] flex items-center gap-[10px] p-[12px_16px] h-12 rounded-full hover:bg-blue transition-colors duration-300"
           >
             <div class="w-4 h-4 fill-urrent">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -225,6 +236,66 @@
             </div>
             <p class="font-semibold group-hover:text-navy">Logout</p>
           </a>
+        </div>
+        <div class="promotion-box pt-[30px]">
+          <div
+            class="group relative p-5 rounded-2xl bg-black flex flex-col gap-y-5 hover:bg-cardpurple transition-colors duration-300"
+          >
+            <div
+              class="bg-white group-hover:bg-black rounded-full -top-5 w-fit absolute z-10 p-3 transition-colors duration-300"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current text-cardpurple group-hover:text-black transition-colors duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.02 2.83992L3.63 7.03992C2.73 7.73992 2 9.22992 2 10.3599V17.7699C2 20.0899 3.89 21.9899 6.21 21.9899H17.79C20.11 21.9899 22 20.0899 22 17.7799V10.4999C22 9.28992 21.19 7.73992 20.2 7.04992L14.02 2.71992C12.62 1.73992 10.37 1.78992 9.02 2.83992Z"
+                  stroke="#6538f1"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.5 18H13.5C15.15 18 16.5 16.65 16.5 15V12C16.5 10.35 15.15 9 13.5 9H10.5C8.85 9 7.5 10.35 7.5 12V15C7.5 16.65 8.85 18 10.5 18Z"
+                  stroke="#6538f1"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 9V18"
+                  stroke="#6538f1"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.5 13.5H16.5"
+                  stroke="#6538f1"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="flex flex-row">
+              <div class="pt-5">
+                <h3
+                  class="text-white text-[14px] font-bold mb-1 group-hover:text-black"
+                >
+                  Upgrade to Pro
+                </h3>
+                <p
+                  class="text-grey text-[12px] leading-relaxed group-hover:text-black"
+                >
+                  Get more features
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div

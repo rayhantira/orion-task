@@ -5,14 +5,17 @@ module.exports = {
     extend: {
       colors: {
         navy: "#0C111D",
-        beige: "#f7f7f5",
+        beige: "#FBFBFB",
         white: "#ffffff",
-        green: "#d8f275",
+        purple: "#6538f1",
+        blue: "#2B82FE",
+        cardpurple: "#EAE8FE",
         complete: "#f0f9c9",
         progress: "#dddef3",
         upcoming: "#f9e2d4",
         red: "#FF5555",
-        grey: "#cecccc",
+        grey: "#B9BCC3",
+        orange: "#F7770A",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
